@@ -1,3 +1,4 @@
+/*CABECERA*/
 .cabecera__container{
     display: flex;
     justify-content: space-between;
@@ -9,8 +10,23 @@
 .cabecera__buscar__item{
     display: none;
 }
+
+/*FOOTER*/
+.rodapie__container{
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; 
+    la linea de abajo sintetiza las dos de arriba*/
+    flex-flow: column wrap;
+}
+
 @media (min-width:834px) {
+    /*CABECERA*/
     .cabecera__buscar__item{
         display: block;
+    }
+    /*FOOTER*/
+    .rodapie__container{
+        justify-content: space-between;
     }
 }
